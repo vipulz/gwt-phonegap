@@ -2,7 +2,6 @@
 	<inherits name='com.google.gwt.user.User' />
 	<inherits name='com.googlecode.gwtphonegap.collection.GwtCollections' />
 
-
 	<define-property name="phonegap.env" values="yes, no" />
 	<property-provider name="phonegap.env"><![CDATA[
   	{
@@ -19,6 +18,8 @@
 	    return 'no';
   	}
 ]]></property-provider>
+
+	
 
     <set-property name="phonegap.env" value="no" >
       <none>
@@ -72,7 +73,6 @@
 			<when-property-is name="phonegap.env" value="yes" />
 		</all>
 	</replace-with>
-	
     
     <!-- Camera -->
     <replace-with class="com.googlecode.gwtphonegap.client.camera.CameraBrowserImpl">
@@ -325,7 +325,6 @@
 	
 	<!-- disable default gwt Log handler -->
 	<set-property name="gwt.logging.consoleHandler" value="DISABLED"/> 
-	<set-property name="gwt.logging.popupHandler" value="DISABLED" />
 	
 	
 	
